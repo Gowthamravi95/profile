@@ -1,0 +1,95 @@
+.sidebar{
+    width: 200px;
+    height: 100vh;
+    border-right: 1px solid lightgray;
+    position: fixed;
+    background-color: #fff;
+    top:50px;
+    left: -201px;
+    transition: all 300ms linear;
+    .title{
+        border-bottom: 2px solid lightgrey;
+        padding: 20px 10px ;
+        background-color: #000;
+        text-align: center;
+        h2{
+            font-size: 2rem;
+            font-weight: 500;
+            color: white;
+            display: none;
+        }
+        p{
+            color: $primary-color;
+            display: none;
+        }
+        
+     }
+    .nav-item{
+        padding: 10px 30px;
+        display: flex;
+        cursor: pointer;
+        .nav-icon{
+            font-size: 1.2rem;
+            margin-right: 30px;
+        
+        }
+        .nav-link{
+            font-size: 1.1rem;
+            font-weight: 300;
+            padding-top: 4px;
+        }
+    }
+    
+}
+.sidebar-left{
+    left: 0;
+}
+.nav-item-bg{
+    animation: anim 300ms linear ;
+}
+
+
+@media screen and ( min-width:1200px) {
+
+    .sidebar{
+        top:0;
+        left:0;
+        display: block;
+        .title {
+            h2 , p{
+                display: block;
+            }
+        }
+    }
+    
+    
+}
+
+   @keyframes nav-link-ani {
+        0%{
+            transform: translatex(50px);
+        opacity: 0;
+        }
+        100%{
+            transform: translatex(0);
+            opacity: 1;
+        }
+    }
+    @keyframes nav-icon-ani {
+        0%{
+            transform: translatex(-50px);
+        opacity: 0;
+        }
+        100%{
+            transform: translatex(0);
+            opacity: 1;
+        }
+    }
+    @keyframes anim {
+        0%{
+            background-color: gray;
+        }
+        100%{
+            background-color: white;
+        }
+    }

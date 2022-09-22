@@ -1,0 +1,111 @@
+@media screen and ( min-width:576px) {
+    .main .hero span{
+        font-size: 1.3rem;
+        line-height: 5rem;
+    }
+    .main .hero h1{
+        font-size: 3rem;
+    }
+    .main .hero h2{
+        font-size: 2.4rem;
+        line-height: 5rem;
+
+    }
+    .main .hero p{
+        font-size: 1rem;
+        width: 500px;
+    }
+    
+    .about span{
+        font-size: 1.3rem;
+    }
+    .about h1{
+        font-size: 4rem;
+    }
+    .about h2{
+        font-size: 1.5rem;
+        line-height: 5rem;
+
+
+    }
+    .about p{
+        font-size: 1rem;
+        width: 500px;
+    }
+  
+    .about-left,.hero-left{
+        margin-left: 45px;
+    
+       }
+    
+    
+}
+
+
+
+@media screen and ( min-width:900px) {
+    
+   
+    .hero-right .image-box,.about-right .image-box{
+        display: block;
+        
+    }
+   
+    .hero-right img,.about-right img{
+        height: 400px;
+        display: block;
+
+    }  
+    .main .hero,.about{
+        flex-direction: row;
+    } 
+    .hero-left{
+        width: 750px;
+
+    }
+    .about-left{
+        margin-left: 0;
+    
+       }
+       .hero-left{
+        margin-left: 30px;
+        width: 480px;
+       }
+    
+}
+
+@media screen and ( min-width:1200px) {
+    .main .hero,.about{
+        padding-top: 20vh ;
+    }
+    .hero,.about,.works,.skills,.education{
+        scroll-margin-top: 0px;
+      
+    }
+    .main .hero,.about,.works{
+        padding: 10vh 10vh;
+        height: 100vh;
+    }
+        
+        .main{
+            left: 200px;
+            top: 0;
+            width: 87vw;
+    
+        }
+        .main .hero h1{
+            font-size: 4rem;
+        }
+        .main .hero h2{
+            font-size: 3.1rem;
+        }
+        .hero-left,.about-left{
+            margin-left: 0px;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+           }
+      
+    }
+   

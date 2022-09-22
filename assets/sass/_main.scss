@@ -1,0 +1,21 @@
+.main{
+    width: 100vw;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    z-index: -2;
+}
+.main .hero,.about,.works{
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #0a192f;
+    scroll-margin-top: 70px;
+}
+
+
+.about,.skills{
+    background-color: white;
+    scroll-margin-top: 70px;
+
+}

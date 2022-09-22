@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// variables 
+
+$primary-color: #e31b6d;
+$dark-color: #000;
+
+
+
+
+
+@import "nav";
+@import 'sidebar';
+@import 'main';
+@import 'hero';
+@import 'about';
+@import 'work';
+@import 'skill';
+@import 'education';
+@import 'res';
+
+
+
+
+
+
+
+
+
+
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    all: unset;
+}
+
+
+
+@media screen and ( min-width:1550px) {
+  
+  .main{
+    max-width: 1350px;
+    position: absolute;
+
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11243f;
+  }
+  .contain{
+    position: relative;
+    width: 1550px;
+  
+  }
+  .sidebar{
+    position: absolute;
+  }
+  .sidebar-wrapper{
+    position: fixed;
+    
+  }
+}

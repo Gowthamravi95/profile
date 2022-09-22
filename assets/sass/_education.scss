@@ -1,0 +1,218 @@
+.card-education-item{
+    background-color: #fff;
+    width: 240px;
+    height:180px;
+    position: relative;
+    text-align: center;
+    left:60%;
+    transform: translatex(-50%);
+    margin-bottom: 50px;
+    h2{
+        background-color: #e31b6d;
+        color: white;
+        padding: 5px;
+        font-size: 1.1rem;
+    
+        &:before{
+            content: "";
+            width: 10px;
+            height: 240px;
+            background-color: white;
+            position: absolute;
+            border-radius: 8px;
+            left:-74px;
+            transform: translatey(-50%);
+            top:50%;
+        }
+    }
+    &:before{
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        position: absolute;
+        left:-79px;
+        transform: translatey(-50%);
+        top:50%;
+    }
+    &:after{
+        content: "";
+        width: 62px;
+        height: 10px;
+        background-color: white;
+        position: absolute;
+        left:-62px;
+        transform: translatey(-50%);
+        top:50%;
+    }
+    .card-education-score{
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+        flex-wrap: nowrap;
+        p{
+            font-size: 1.8rem;
+            font-family: 'Indie Flower', cursive;
+        }
+        img{
+            width: 50px;
+        }
+        div{
+            white-space: nowrap;
+        }
+    }
+    .card-education-name{
+        position: absolute;
+        bottom: 0;
+        padding: 5px;
+        background-color: #fafafa;
+        color: #8892b0;
+        transform: translatex(-50%);
+        left:50%;
+        width: 230px;
+        h3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 0.8rem;
+        }
+        
+    }
+}
+
+ 
+.education{
+    position: relative;
+    background-color: #0a192f;
+    padding-top: 20px;
+   scroll-margin-top: 70px;
+   padding-bottom: 20px;
+   h4{
+    color:white;
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    padding-left: 80px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    &:after{
+        content: "";
+        width: 50px;
+        border-bottom: 5px solid #e31b6d;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        position: absolute;
+       left: 0;
+       transform: translateY(-50%);
+       top: 50%;
+    } 
+ 
+
+}
+}
+  
+
+
+ 
+
+
+@media screen and ( min-width:700px) {
+    .card-education-item{
+        width: 260px;
+        height:250px;
+        left: 30%;
+        margin-right: 50px;
+        h2{
+            padding: 8px;
+            font-size: 1.3rem;
+            &::before{
+                content: "";
+                width: 335px;
+                height: 10px;
+                background-color: white;
+                position: absolute;
+                border-radius: 8px;
+                top:-55px;
+                transform: translatex(-50%);
+                left:50%;
+                
+            }
+        }
+        &:before{
+            width: 30px;
+            height: 30px;
+            top:-65px;
+            transform: translatex(-50%);
+            left:50%;
+        }
+        &:after{
+            width: 10px;
+            height: 40px;
+            top:-40px;
+            transform: translatex(-50%);
+            left:50%;
+        }
+       
+        .card-education-score{
+            width: 100%;
+
+            padding: 40px;
+            img{
+                width: 70px;
+            }
+            p{
+                font-size: 2.3rem;
+            }
+        }
+        .card-education-name{
+            padding: 8px;
+            width: 100%;
+            h3{
+                font-size: 1.1rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+        }
+    }
+    .education-content{
+        display: grid;
+       
+       grid-template-columns: 1fr 1fr;
+       row-gap: 60px;
+       max-width: 650px;
+       column-gap: 0px;
+        margin: auto;
+        padding: 150px 100px;
+    }
+    
+ 
+}
+
+@media screen and ( min-width:900px) {
+   
+    .education{
+    height: 100vh;
+    padding-top: 9vh;
+    
+
+    }
+    .education-content{
+       
+        padding: 40px 100px;
+    }
+  
+}
+
+@media screen and ( min-width:1470px) {
+    .education-content{
+       margin-top: 35vh;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       gap: 0px;
+       padding: 0px 0px;
+       margin-left: 100px;
+    }
+}
