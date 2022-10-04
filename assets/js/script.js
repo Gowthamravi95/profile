@@ -1,9 +1,8 @@
-let navToggle=document.querySelector('.nav-toggle'),
+let 
 navItem=document.querySelectorAll('.nav-item'),
 navIcon=document.querySelectorAll('.nav-icon'),
 navLink=document.querySelectorAll('.nav-link'),
 
-sidebar=document.querySelector(".sidebar"),
 circle=document.querySelectorAll("circle");
 
     const navItemBgColor=["#fb309f","#008073","#00bcd4","#3f51b5","#9c27b0","#f44336","#ff9800"]
@@ -20,7 +19,8 @@ navItem.forEach((item,index)=>{
     })
     item.addEventListener("mouseup",()=>{
         item.classList.remove("nav-item-bg");
-        sidebar.classList.toggle("sidebar-left");
+         $('.sidebar').toggleClass('sidebar-left')
+
     })
     item.addEventListener("mouseover",()=>{
         item.style.background="#fafafa";
@@ -49,11 +49,22 @@ navLink.forEach((item,index)=>{
 
 
 
+
 // sidebar collapse 
 
-navToggle.onclick=()=>{
-    sidebar.classList.toggle("sidebar-left");
-}
+
+$('.nav-toggle').click(function(){
+    $('.sidebar').toggleClass('sidebar-left')
+    let val =$('.sidebar').hasClass('sidebar-left')
+    if(val){
+        $('.main').click(function(){
+                $('.sidebar').removeClass('sidebar-left')
+    
+        })
+
+    }
+    
+})
 
 
 // svg animate on scroll 
@@ -74,35 +85,13 @@ function skillAnimation(){
     })
  }
 
+    $(".skill").attr("data-aos","zoom-in");
+//  let array1= new Array();
+// array2=[703,1406,2109];
+//  navItem.forEach((item,index)=>{
+//     let el=document.getElementById(item.getAttribute("data-link"));
+//     array1[index]=el;
 
 
- let array1= new Array();
-array2=[703,1406,2109];
- navItem.forEach((item,index)=>{
-    let el=document.getElementById(item.getAttribute("data-link"));
-    array1[index]=el;
+// })
 
-
-})
-
-let left=document.querySelector(".icofont-square-left");
-let worksParent=document.querySelector(".works-parent");
-let right=document.querySelector(".icofont-square-right");
-let containerWidth=worksParent.getBoundingClientRect().width;
-console.log(containerWidth);
-
-left.addEventListener('click',()=>{
-    worksParent.scrollLeft += containerWidth + 10;
-   
-
-})
-
-
-
-right.addEventListener('click',()=>{
-    worksParent.scrollLeft -= containerWidth + 10  ;
-   
-    
-})
-
-let worksImage=document.querySelectorAll("works-image");

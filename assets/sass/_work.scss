@@ -68,11 +68,12 @@ table{
             i{
                 font-size: 0.9rem;
                 padding: 2px;
+                &:hover{
+                    color: #e31b6d;
+                }
             }
         }
-        &:hover{
-            background-color: #153d79;
-        }
+        
     }
 }
 

@@ -2,7 +2,6 @@
 .hero-right,.about-right{
  margin: auto;
  position: relative;
- animation: hero-right 700ms linear ;
  z-index: 2;
 }
 
@@ -10,14 +9,12 @@
     font-size: 0.9rem;
     color: white;
     line-height: 3rem;
-    animation: hero-left 500ms linear ;
 }
 
 .main .hero h1{
     color:#e31b6d;
     font-size: 2rem;
     font-weight: 600;
-    animation: hero-left 600ms linear ;
 
 }
 .main .hero h2{
@@ -25,15 +22,16 @@
     font-size: 1.7rem;
     font-weight: 500;
     line-height: 2.5rem;
-    animation: hero-left 700ms linear ;
 }
 
-.main .hero p{
-    line-height: 1.3rem;
-    font-size: 0.9rem;
+.main .hero .hero-left p{
+    line-height: 1.7;
+    font-size: 1rem;
     color: #8892b0;
     margin-top: 15px;
-    width: 80vw;
+    font-family: "Roboto", sans-serif;
+
+    // width: 80vw;
 }
 .hero-right img,.about-right img{
    display: none;
@@ -57,25 +55,3 @@
     cursor: pointer;
 }
 
-@keyframes hero-left {
-    0%{
-        position: relative;
-        top: -50px;
-    opacity: 0;
-    }
-    100%{
-        position: relative;
-        top: 0px;
-        opacity: 1;
-    }
-}
-@keyframes hero-right {
-    0%{
-        right: -100px;
-       opacity: 0;
-    }
-    100%{
-        right: 0px;
-        opacity: 1;
-    }
-}
