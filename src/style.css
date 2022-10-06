@@ -1085,7 +1085,7 @@ circle {
   align-items: center;
   flex-direction: column;
 }
-.contact .wrapper .phone, .contact .wrapper .mail {
+.contact .wrapper .phone, .contact .wrapper .mail, .contact .wrapper .whatsapp {
   width: 340px;
   height: 180px;
   border-radius: 5px;
@@ -1095,19 +1095,20 @@ circle {
   gap: 20px;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
-.contact .wrapper .phone img, .contact .wrapper .mail img {
+.contact .wrapper .phone img, .contact .wrapper .mail img, .contact .wrapper .whatsapp img {
   width: 60px;
   height: 60px;
 }
-.contact .wrapper .phone h2, .contact .wrapper .mail h2 {
+.contact .wrapper .phone h2, .contact .wrapper .mail h2, .contact .wrapper .whatsapp h2 {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.8);
 }
-.contact .wrapper .phone span, .contact .wrapper .mail span {
+.contact .wrapper .phone span, .contact .wrapper .mail span, .contact .wrapper .whatsapp span {
   font-size: 18px;
 }
-.contact .wrapper .phone div, .contact .wrapper .mail div {
+.contact .wrapper .phone div, .contact .wrapper .mail div, .contact .wrapper .whatsapp div {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
