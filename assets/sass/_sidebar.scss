@@ -93,4 +93,17 @@
             background-color: white;
         }
     }
-
+.cta{
+    margin: auto;
+    padding: 20px  10px;
+    div{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 30px; 
+        img{
+            cursor: pointer;
+        } 
+    }
+   
+}

@@ -146,6 +146,20 @@
     background-color: white;
   }
 }
+.cta {
+  margin: auto;
+  padding: 20px 10px;
+}
+.cta div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cta div img {
+  cursor: pointer;
+}
+
 .main {
   width: 100vw;
   position: absolute;
@@ -966,7 +980,7 @@ circle {
   position: relative;
   padding-left: 80px;
   margin-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .experience h4:after {
   content: "";
@@ -980,7 +994,55 @@ circle {
   top: 50%;
 }
 .experience .wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.experience .wrapper .exp1 {
+  max-width: 500px;
+}
+.experience .wrapper .exp1 div:nth-child(1) {
+  display: flex;
+  gap: 30px;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.experience .wrapper .exp1 div:nth-child(1) img {
+  height: 50px;
+}
+.experience .wrapper .exp1 div:nth-child(1) h2 {
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.experience .wrapper .exp1 div:nth-child(1) h2::before {
+  content: "";
+  height: 70px;
+  width: 3px;
+  background-color: #e31b6d;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+}
+.experience .wrapper .exp1 .content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.experience .wrapper .exp1 .content span {
+  color: black;
+  font-size: 20px;
+}
+.experience .wrapper .exp1 .content h5 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 900px) {
