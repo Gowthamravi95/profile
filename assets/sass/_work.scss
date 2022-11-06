@@ -40,10 +40,15 @@ table{
         }
         th:nth-child(3){
             width: 700px;
+
         }
         th:nth-child(5){
             width: 200px;
             display: none;
+        }
+        th:nth-child(4),td:nth-child(4){
+            display: none;
+
         }
         th:last-of-type{
             width: 200px;
@@ -97,6 +102,11 @@ table{
         }
         th:nth-child(3){
             width: 700px;
+
+        }
+        th:nth-child(4),td:nth-child(4){
+            display: table-cell;
+
         }
         th:nth-child(5){
             width: 100px;

@@ -85,7 +85,6 @@ function skillAnimation(){
     })
  }
 
-    $(".skill").attr("data-aos","zoom-in");
 //  let array1= new Array();
 // array2=[703,1406,2109];
 //  navItem.forEach((item,index)=>{
@@ -197,4 +196,17 @@ jQuery(document).ready(function () {
         }
     })
  
+
+
+});
+
+
+
+
+$(document).ready(function () {
+    $(".skill").attr({"data-aos":"zoom-in"});
+
+    setTimeout(() => {
+        AOS.init();
+    }, 120);
 });
