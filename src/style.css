@@ -57,6 +57,7 @@
   display: none;
 }
 .sidebar .nav-item {
+  width: 100%;
   padding: 10px 30px;
   display: flex;
   cursor: pointer;
@@ -146,6 +147,20 @@
     background-color: white;
   }
 }
+.cta {
+  margin: auto;
+  padding: 20px 10px;
+}
+.cta div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.cta div img {
+  cursor: pointer;
+}
+
 .main {
   width: 100vw;
   position: absolute;
@@ -165,6 +180,10 @@
 .about, .skills {
   background-color: white;
   scroll-margin-top: 70px;
+}
+
+.bg {
+  background-color: white;
 }
 
 .hero-right, .about-right {
@@ -490,7 +509,7 @@ a {
 }
 
 .active_page {
-  background: #337ab7;
+  background: #e31b6d;
   color: white !important;
 }
 
@@ -1081,7 +1100,7 @@ circle {
   position: relative;
   padding-left: 80px;
   margin-left: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .experience h4:after {
   content: "";
@@ -1095,7 +1114,55 @@ circle {
   top: 50%;
 }
 .experience .wrapper {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.experience .wrapper .exp1 {
+  max-width: 500px;
+}
+.experience .wrapper .exp1 div:nth-child(1) {
+  display: flex;
+  gap: 30px;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.experience .wrapper .exp1 div:nth-child(1) img {
+  height: 50px;
+}
+.experience .wrapper .exp1 div:nth-child(1) h2 {
+  font-size: 22px;
+  font-weight: 700;
+  position: relative;
+}
+.experience .wrapper .exp1 div:nth-child(1) h2::before {
+  content: "";
+  height: 70px;
+  width: 3px;
+  background-color: #e31b6d;
+  position: absolute;
+  left: -15px;
+  top: -10px;
+}
+.experience .wrapper .exp1 .content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+.experience .wrapper .exp1 .content span {
+  color: black;
+  font-size: 20px;
+}
+.experience .wrapper .exp1 .content h5 {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 900px) {
@@ -1136,9 +1203,11 @@ circle {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  height: 80%;
 }
-.contact .wrapper .phone, .contact .wrapper .mail {
+.contact .wrapper .phone, .contact .wrapper .mail, .contact .wrapper .whatsapp {
   width: 340px;
   height: 180px;
   border-radius: 5px;
@@ -1148,19 +1217,20 @@ circle {
   gap: 20px;
   align-items: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
-.contact .wrapper .phone img, .contact .wrapper .mail img {
+.contact .wrapper .phone img, .contact .wrapper .mail img, .contact .wrapper .whatsapp img {
   width: 60px;
   height: 60px;
 }
-.contact .wrapper .phone h2, .contact .wrapper .mail h2 {
+.contact .wrapper .phone h2, .contact .wrapper .mail h2, .contact .wrapper .whatsapp h2 {
   font-size: 32px;
   color: rgba(0, 0, 0, 0.8);
 }
-.contact .wrapper .phone span, .contact .wrapper .mail span {
+.contact .wrapper .phone span, .contact .wrapper .mail span, .contact .wrapper .whatsapp span {
   font-size: 18px;
 }
-.contact .wrapper .phone div, .contact .wrapper .mail div {
+.contact .wrapper .phone div, .contact .wrapper .mail div, .contact .wrapper .whatsapp div {
   display: flex;
   justify-content: space-around;
   flex-direction: column;

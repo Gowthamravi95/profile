@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/icofont/icofont.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -67,6 +68,16 @@
                     <div class="nav-item " data-link="contact">
                         <div class="nav-icon "><i class="icofont-send-mail"></i></div>
                         <div class="nav-link ">Contact</div>
+                    </div>
+                    <div class="cta">
+                        <div>
+                            <a href="tel:+918122698567"><img src="./assets/images/3059590.png" height="30px" alt=""  target="_blank"></a>
+                            <a href="mailto:gowthamravi06@gmail.com"><img src="./assets/images/5.jpg" height="30px"  target="_blank"
+                                    alt=""></a>
+                            <a href="https://wa.me/+918122698567"><img src="./assets/images/2504845.png" height="30px"  target="_blank"
+                                    alt=""></a>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -145,17 +156,42 @@
                                 <th>Link</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <input type='hidden' id='current_page' />
+                        <input type='hidden' id='show_per_page' />
+                        <tbody id="tabel-length">
+                           
                             <tr>
                                 <td><i class="fa-regular fa-folder"></i></td>
                                 <td>Web D School</td>
-                                <td>Home page for  </td>
+                                <td>Home page for Educational Institution </td>
                                 <td>Jquery, Sass , Html </td>
                                 <td>Yes</td>
                                 <td><a href="https://github.com/Gowthamravi95/webdschool.git" target="_blank"><i
-                                    class="fa-brands fa-github"></i></a></i><a
-                                href="https://gowthamravi95.github.io/webdschool/#" target="_blank"><i
-                                    class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                                            class="fa-brands fa-github"></i></a></i><a
+                                        href="https://gowthamravi95.github.io/webdschool/#" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-folder"></i></td>
+                                <td>Full Static Page</td>
+                                <td>EducationL Theme Page </td>
+                                <td>Sass,Jquery , Html </td>
+                                <td>Yes</td>
+                                <td><a href="https://github.com/Gowthamravi95/webdschooltheme.git" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a></i><a
+                                        href="https://gowthamravi95.github.io/webdschooltheme/#" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-folder"></i></td>
+                                <td>Hotstar Clone</td>
+                                <td>Cloning Of hotstar home page </td>
+                                <td>React, scss </td>
+                                <td>No</td>
+                                <td><a href="https://github.com/Gowthamravi95/hotstarclone.git" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a></i><a
+                                        href="https://gowthamravi95.github.io/hotstarclone/#" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
                             </tr>
                             <tr>
                                 <td><i class="fa-regular fa-folder"></i></td>
@@ -166,6 +202,28 @@
                                 <td><a href="https://github.com/Gowthamravi95/formvalidation.git" target="_blank"><i
                                             class="fa-brands fa-github"></i></a></i><a
                                         href="https://gowthamravi95.github.io/formvalidation/#" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-folder"></i></td>
+                                <td>WonderB e-site</td>
+                                <td>Parallex Scrolling ecommerce site</td>
+                                <td>css , Html,javascript </td>
+                                <td>No</td>
+                                <td><a href="https://github.com/Gowthamravi95/wonderb.git" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a></i><a
+                                        href="https://gowthamravi95.github.io/wonderb/#" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-folder"></i></td>
+                                <td>Dashboard</td>
+                                <td>A simple office home dashboard</td>
+                                <td>css , Html,javascript </td>
+                                <td>No</td>
+                                <td><a href="https://github.com/Gowthamravi95/dashboardgit" target="_blank"><i
+                                            class="fa-brands fa-github"></i></a></i><a
+                                        href="https://gowthamravi95.github.io/dashboard/#" target="_blank"><i
                                             class="fa-solid fa-arrow-up-right-from-square"></i></a></td>
                             </tr>
                             <tr>
@@ -236,7 +294,11 @@
                             </tr>
                         </tbody>
                     </table>
-                    <nav aria-label="Page navigation example">
+
+            <div id='page_navigation'></div>
+
+
+                    <!-- <nav aria-label="Page navigation example">
                         <ul class="pagination">
                           <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
@@ -252,7 +314,9 @@
                             </a>
                           </li>
                         </ul>
-                      </nav>
+                      </nav> -->
+
+
                 </div>
 
 
@@ -467,33 +531,40 @@
                 <h4>Experience.</h4>
                 <div class="wrapper">
                     <div class="exp1">
-                        <img src="./assets/images/Artboard 6.png" alt="">
-                        <h2>Web D school -Internship</h2>
-                        <h3>Role -Web Designer & Developer</h3>
-                        <h3>Period-Sep 2022 to November 2022</h3>
-                        <p>Role Description and works done</p>
-                        <p></p>
+                        <div>
+                            <img src="./assets/images/Artboard 6.png" alt="">
+                            <h2>Web D school -Internship</h2>
+                        </div>
+                        <div class="content">
+                            <h3><span>Role -</span> Web Designer & Developer</h3>
+                            <h3><span>Period-</span> Sep 2022 to November 2022</h3>
+                            <h5>Role Description and works done</h5>
+                            <p></p>
+                        </div>
                     </div>
                     <div class="exp1">
-                        <img src="./assets/images/automotive-metal-impregnations-120x120.png" alt="">
-                        <h2>Automotive Metal Impregnation's </h2>
-                        <h3>Role -Executive Engineer</h3>
-                        <h3>Period-March 2017 to January 2022</h3>
-                        <p>Role Description and works done</p>
-                        <ul>
-                            <li>Order Booking for the month wise plan</li>
-                            <li> Planning for supplies against order Booking</li>
-                            <li> Invoice generation and supply follow up to customer</li>
-                            <li> Sales vs Order booking comparison for follow up</li>
-                            <li> Entering Invoice and Purchase Invoice in tally and ageing report for follow up on
-                                pending payment</li>
-                            <li> Entering payment receipt and generate Statement from tally</li>
-                            <li> Attending calls from existing Customer for sales and customer complaints
-                            <li> Following up Payments</li>
-                            <li> Maintaining Stock for supplies and inventory management</li>
-                            <li> Supervising co workers for job allocation and maintain work flow</li>
-                            <li> Follow up new business generation through calls and mails</li>
+                        <div>
+                            <img src="./assets/images/automotive-metal-impregnations-120x120.png" alt="">
+                            <h2>Automotive Metal Impregnation's </h2>
+                        </div>
+                        <div class="content">
+                            <h3><span>Role -</span>Executive Engineer</h3>
+                            <h3><span>Period-</span>March 2017 to January 2022</h3>
+                            <h5>Role Description and works done</h5>
+                            <ul>
+                                <li>Order Booking for the month wise plan</li>
+                                <li> Planning for supplies against order Booking</li>
+                                <li> Invoice generation and supply follow up to customer</li>
+                                <li> Sales vs Order booking comparison for follow up</li>
+                                <li> Entering Invoice and Purchase Invoice in tally and ageing report for follow up on
+                                    pending payment</li>
+                                <li> Entering payment receipt and generate Statement from tally</li>
+                                <li> Attending calls from existing Customer for sales and customer complaints
+                                <li> Following up Payments</li>
+                                <li> Maintaining Stock for supplies and inventory management</li>
+                                <li> Supervising co workers for job allocation and maintain work flow</li>
                             </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -509,21 +580,37 @@
             <div class="contact" id="contact">
                 <h4>Contact.</h4>
                 <div class="wrapper">
-                    <div class="phone" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="./assets/images/3059590.png" alt="">
-                        <div>
-                            <h2>Phone</h2>
-                            <span>+91 8122 698 567</span>
+                    <a href="tel:+918122698567"  target="_blank">
+                        <div class="phone" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="120">
+                            <img src="./assets/images/3059590.png" alt="">
+                            <div>
+                                <h2>Phone</h2>
+                                <span>+91 8122 698 567</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="mail" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="500">
-                        <img src="./assets/images/3178283.png" alt="">
+                    </a>
+                    <a href="mailto:gowthamravi06@gmail.com"  target="_blank">
+                        <div class="mail" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="110">
+                            <img src="./assets/images/5.jpg" alt="">
 
-                        <div>
-                            <h2>Mail</h2>
-                            <span>gowthamravi06@gmail.com</span>
+                            <div>
+                                <h2>Mail</h2>
+                                <span>gowthamravi06@gmail.com</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="https://wa.me/+918122698567" target="_blank">
+                        <div class="whatsapp" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="90">
+                            <img src="./assets/images/2504845.png" alt="">
+
+                            <div>
+                                <h2>whatsapp</h2>
+                                <span>8122 698 567</span>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
 
@@ -536,279 +623,8 @@
 
 
 
-            <h2>Our Team</h2>
-            <div class="physicianList">
-            <input type='hidden' id='current_page' />
-            <input type='hidden' id='show_per_page' />
-              <ul id="pagingBox">
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/gE7cc5/user_4.jpg" alt="user_4" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
+           
             
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/czhXAQ/user_1.jpg" alt="user_1" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/gE7cc5/user_4.jpg" alt="user_4" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily 2</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/czhXAQ/user_1.jpg" alt="user_1" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram 2</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/hnYLh5/team_member01.jpg" alt="team_member01" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily 3</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/czhXAQ/user_1.jpg" alt="user_1" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram 3</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/gE7cc5/user_4.jpg" alt="user_4" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily 4</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://preview.ibb.co/c90NvQ/team_corporate_3.jpg" alt="team_corporate_3" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram 4</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://preview.ibb.co/gnbvFQ/team_corporate_4.jpg" alt="team_corporate_4" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily 5</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/czhXAQ/user_1.jpg" alt="user_1" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram 5</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/gE7cc5/user_4.jpg" alt="user_4" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Emily 6</strong></h6>
-                                        <p class="text-info">Web Designer</p>
-                                        <p>+880-168-240</p>
-                                        <p>emily@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                <li>
-                  <div class="physicianBox">
-                                <div class="physicianPic">
-                                    <img src="https://image.ibb.co/czhXAQ/user_1.jpg" alt="user_1" border="0">
-                                </div>
-                                
-                                <div class="physicianInfo">
-                                    <div class="info">
-                                        <h6><strong>Abram 6</strong></h6>
-                                        <p class="text-info">Frontend Developer</p>
-                                        <p>+880-168-240</p>
-                                        <p>abram@gmail.com</p>
-                                    </div>
-            
-                                </div>
-                            
-                            <div class="physicianBio">
-                                <a class="showBioBtn" href="javascript:void(0)">Show BIO</a>
-                            </div>
-                        </div>
-                </li>
-                
-                
-              </ul>
-            </div>
-            
-            <div id='page_navigation'></div>
-            
-
-
-
 
 
 
@@ -836,7 +652,9 @@
 
     <script src="./assets/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
     <script>
         AOS.init();

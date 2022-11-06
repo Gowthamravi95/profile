@@ -101,9 +101,9 @@ jQuery(document).ready(function () {
 
     //Pagination JS
     //how much items per page to show
-    var show_per_page = 4; 
-    //getting the amount of elements inside pagingBox div
-    var number_of_items = $('#pagingBox').children().size();
+    var show_per_page = 7; 
+    //getting the amount of elements inside pagingBox divs
+    var number_of_items = $('#tabel-length').children().length;
     //calculate the number of pages we are going to have
     var number_of_pages = Math.ceil(number_of_items/show_per_page);
     
@@ -119,13 +119,13 @@ jQuery(document).ready(function () {
         - links to specific pages
         - link to next page
     */
-    var navigation_html = '<a class="previous_link" href="javascript:previous();">Prev</a>';
+    var navigation_html = '<a class="previous_link bg" href="javascript:previous();">Prev</a>';
     var current_link = 0;
     while(number_of_pages > current_link){
-        navigation_html += '<a class="page_link" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
+        navigation_html += '<a class="page_link bg" href="javascript:go_to_page(' + current_link +')" longdesc="' + current_link +'">'+ (current_link + 1) +'</a>';
         current_link++;
     }
-    navigation_html += '<a class="next_link" href="javascript:next();">Next</a>';
+    navigation_html += '<a class="next_link bg" href="javascript:next();">Next</a>';
     
     $('#page_navigation').html(navigation_html);
     
@@ -133,10 +133,10 @@ jQuery(document).ready(function () {
     $('#page_navigation .page_link:first').addClass('active_page');
     
     //hide all the elements inside pagingBox div
-    $('#pagingBox').children().css('display', 'none');
+    $('#tabel-length').children().css('display', 'none');
     
     //and show the first n (show_per_page) elements
-    $('#pagingBox').children().slice(0, show_per_page).css('display', 'block');
+    $('#tabel-length').children().slice(0, show_per_page).css('display', 'table-row');
 
 });
 
@@ -173,7 +173,7 @@ start_from = page_num * show_per_page;
 end_on = start_from + show_per_page;
 
 //hide all children elements of pagingBox div, get specific items and show them
-$('#pagingBox').children().css('display', 'none').slice(start_from, end_on).css('display', 'block');
+$('#tabel-length').children().css('display', 'none').slice(start_from, end_on).css('display', 'table-row');
 
 /*get the page link that has longdesc attribute of the current page and add active_page class to it
 and remove that class from previously active page link*/
@@ -182,3 +182,19 @@ $('.page_link[longdesc=' + page_num +']').addClass('active_page').siblings('.act
 //update the current page input field
 $('#current_page').val(page_num);
 }
+
+
+jQuery(document).ready(function () {
+
+    $("tr").click(function(){
+       
+        let href=$(this).children("td:last-child").children("a:last-child").attr("href");
+        if(href){
+           
+
+            window.open(href, '_blank');
+
+        }
+    })
+ 
+});

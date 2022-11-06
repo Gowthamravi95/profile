@@ -25,6 +25,7 @@
         
      }
     .nav-item{
+        width: 100%;
         padding: 10px 30px;
         display: flex;
         cursor: pointer;
@@ -93,4 +94,17 @@
             background-color: white;
         }
     }
-
+.cta{
+    margin: auto;
+    padding: 20px  10px;
+    div{
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 30px; 
+        img{
+            cursor: pointer;
+        } 
+    }
+   
+}
