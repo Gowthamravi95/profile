@@ -100,7 +100,7 @@ jQuery(document).ready(function () {
 
     //Pagination JS
     //how much items per page to show
-    var show_per_page = 5; 
+    var show_per_page = 6; 
     //getting the amount of elements inside pagingBox divs
     var number_of_items = $('#tabel-length').children().length;
     //calculate the number of pages we are going to have
