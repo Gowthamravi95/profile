@@ -10,6 +10,9 @@
   z-index: 3;
   width: 100vw;
 }
+#page_navigation a{
+  cursor: pointer;
+}
 .nav-title {
   text-align: center;
   margin: auto;
