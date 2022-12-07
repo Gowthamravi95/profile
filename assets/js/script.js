@@ -79,11 +79,19 @@ window.addEventListener("scroll",eventScroll=()=>{
         window.removeEventListener("scroll",eventScroll);
         }
 })
-function skillAnimation(){
-    circle.forEach((item,index)=>{
-     item.style.animation="animSvg 2s linear forwards";
-    })
- }
+    const skillAnimation =()=>{
+        circle.forEach((item,index)=>{
+         item.style.animation="animSvg 0.5s linear forwards";
+        })
+     }
+
+
+
+
+
+
+
+
 
 //  let array1= new Array();
 // array2=[703,1406,2109];
