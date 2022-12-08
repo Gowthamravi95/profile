@@ -10,9 +10,6 @@
   z-index: 3;
   width: 100vw;
 }
-#page_navigation a{
-  cursor: pointer;
-}
 .nav-title {
   text-align: center;
   margin: auto;
@@ -319,7 +316,6 @@ table tr {
 table tr th {
   padding: 5px;
   width: 500px;
-  text-align: center;
 }
 table tr th:first-of-type {
   width: 100px;
@@ -370,6 +366,7 @@ table tr td:last-of-type i:hover {
   table tr th {
     padding: 20px;
     width: 500px;
+    text-align: center;
   }
   table tr th:first-of-type {
     width: 100px;
@@ -409,6 +406,10 @@ table tr td:last-of-type i:hover {
     background-color: #153d79;
   }
 }
+#page_navigation a {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
@@ -1160,6 +1161,9 @@ circle {
   position: absolute;
   left: -15px;
   top: -10px;
+}
+.experience .wrapper .exp1 .content ul li {
+  padding-top: 5px;
 }
 .experience .wrapper .exp1 .content h3 {
   font-size: 18px;
